@@ -160,7 +160,7 @@ try:
 
     # PLUGIN MESAJLARI AYARLIYORUZ
     PLUGIN_MESAJLAR = {}
-    ORJ_PLUGIN_MESAJLAR = {"alive": "`Tanrı Türk'ü Korusun. 🐺 Asena çalışıyor.`", "afk": f"`{str(choice(AFKSTR))}`", "kickme": "`Güle Güle ben gidiyorum `🤠", "pm": UNAPPROVED_MSG, "dızcı": str(choice(DIZCILIK_STR)), "ban": "{mention}`, yasaklandı!`", "mute": "{mention}`, sessize alındı!`", "approve": "{mention}`, bana mesaj gönderebilirsin!`", "disapprove": "{mention}`, artık bana mesaj gönderemezsin!`", "block": "{mention}`, engellendin!`"}
+    ORJ_PLUGIN_MESAJLAR = {"alive": "`Tengri Türk'ü Korusun. 🐺 BOZKURT çalışıyor.`", "afk": f"`{str(choice(AFKSTR))}`", "kickme": "`Güle Güle ben gidiyorum `🤠", "pm": UNAPPROVED_MSG, "dızcı": str(choice(DIZCILIK_STR)), "ban": "{mention}`, yasaklandı!`", "mute": "{mention}`, sessize alındı!`", "approve": "{mention}`, bana mesaj gönderebilirsin!`", "disapprove": "{mention}`, artık bana mesaj gönderemezsin!`", "block": "{mention}`, engellendin!`"}
 
     PLUGIN_MESAJLAR_TURLER = ["alive", "afk", "kickme", "pm", "dızcı", "ban", "mute", "approve", "disapprove", "block"]
     for mesaj in PLUGIN_MESAJLAR_TURLER:
@@ -237,8 +237,8 @@ for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
 LOGS.info("Botunuz çalışıyor! Herhangi bir sohbete .alive yazarak Test edin."
-          " Yardıma ihtiyacınız varsa, Destek grubumuza gelin t.me/AsenaSupport")
-LOGS.info(f"Bot sürümünüz: Asena {ASENA_VERSION}")
+          " Yardıma ihtiyacınız varsa, Destek gelin t.me/bozkurt20")
+LOGS.info(f"Bot sürümünüz:asena {ASENA_VERSION}")
 
 """
 if len(argv) not in (1, 3, 4):
