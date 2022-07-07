@@ -70,13 +70,13 @@ async def asena(event):
             return await event.edit("**Chatbot Halihazırda Açık!**")
 
         BOT = "Y"
-        await event.edit("**Asena Yapay Zeka ChatBot Açıldı!**\n**Kullanmak için cümleye** `Asena` **ile başlayın.**")
+        await event.edit("**BOZKURT Yapay Zeka ChatBot Açıldı!**\n**Kullanmak için cümleye** `Asena` **ile başlayın.**")
     elif (event.pattern_match.group(1) == "off" or event.pattern_match.group(1) == "kapa" or event.pattern_match.group(1) == "kapat"):
         if BOT == "N":
             return await event.edit("**Chatbot Halihazırda Kapalı!**")
 
         BOT = "N"
-        await event.edit("**Asena Yapay Zeka ChatBot Kapandı!**")
+        await event.edit("**BOZKURT Yapay Zeka ChatBot Kapandı!**")
     else:
         await event.edit("**Eksik Parametreler!** \n`.asena chatbot` **Komutunu kullanarak talimatları okuyun.**")
 
